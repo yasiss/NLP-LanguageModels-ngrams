@@ -18,7 +18,7 @@ It should be a list of the form (<-s>, w(1), ..., w(n), <-/s>), where each w(i) 
 The following words w(1), ... , w(n), <-/s> are generated according to your language model's distribution. Note that the number of words n is not fixed; 
 instead, you should stop the sentence as soon as you generate the stop token <-/s>.
 
-getSentenceLogProbability(self, sentence): Return the logarithm of the probability of sentence, which is again a list of the form [<s>, w(1), ..., w(n), <-/s>]. 
+getSentenceLogProbability(self, sentence): Return the logarithm of the probability of sentence, which is again a list of the form [<-s>, w(1), ..., w(n), <-/s>]. 
 We should use the natural logarithm − that is, the base-e logarithm. 
 
 getCorpusPerplexity(self, testCorpus): We need to compute the perplexity (normalized inverse log probability) of testCorpus according to your model. 
